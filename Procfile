@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi --log-file -git
+web: gunicorn efs_rest.wsgi --log-file -git
