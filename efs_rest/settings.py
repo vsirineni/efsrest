@@ -85,11 +85,12 @@ WSGI_APPLICATION = 'efs_rest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'efs1',
+        'NAME': 'efsrest',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': 'postgres'
     }
 }
+
 
 
 
@@ -133,7 +134,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL ='/media/'
 
-
+LOGIN_REDIRECT_URL='/'
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
